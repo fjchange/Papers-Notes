@@ -79,7 +79,7 @@ Solution:         __**迁移学习**__
 
 ​	![脸部变型网络](./assets/脸部变型网络.png)
 
-​	关于TPS的解释，这篇[blog](https://blog.csdn.net/victoriaw/article/details/70161180)解释的非常透彻。以下是来自该论文的部分摘要：
+​	关于TPS的解释，这篇[blog](https://blog.csdn.net/victoriaw/article/details/70161180)解释的非常透彻。以下是来自该博文的部分摘要：
 
 > ![1524108763648](./assets/1524108763648.png)
 
