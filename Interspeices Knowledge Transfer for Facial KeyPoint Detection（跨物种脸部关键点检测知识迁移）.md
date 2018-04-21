@@ -6,7 +6,7 @@
 
 # Interspeices Knowledge Transfer for Facial KeyPoint Detection（跨物种脸部关键点检测知识迁移）
 
-![1523462703755](./assets/1523462703755.png)
+![跨物种脸部关键点检测知识迁移1523462703755](./assets/1523462703755.png)
 
 ## 一、介绍
 
@@ -99,13 +99,13 @@ Solution:         __**迁移学习**__
 
 ![1523449603951](./assets/1523449603951.png)
 
-​	上图，我们看到对于wraping network 的loss计算是通过计算对应的像素的位置偏差的L2范数和，即对应的关键节点的L2距离和。另外训练的时候是将K个match都用做训练，会尝试多个训练变形，多次纠正当作潜在的正确的变形，当作data augmentation，可以一定程度上提高泛化，对于特定的离群值点的敏感程度会有所下降。
+​	文中对于wraping network 的loss计算是通过计算对应的像素的偏差的L2范数和，另外训练的时候是将K个match都用做训练，会尝试多个训练变形，多次纠正当作潜在的正确的变形，当作data augmentation，可以一定程度上提高泛化，对于特定的离群值点的敏感程度会有所下降。
 
 
 
 #### 3. Animal keypoint detection network (动物关键点检测网络)
 
-​	对于关键点的网络结构是Vanilla CNN的一种变型，如下图所示，四层卷积网络，还有两层全连接层，这两层连接层用到的tanh作为非线性的激活函数，另外再最后的三层卷积层输出都经过max-pooling。利用额外的卷积层和max-pooling能够让网络适应更大的input  image。另外对于tanh作为activation function，很容易趋向饱和，也就是可能导致梯度变化太小甚至近乎于0，所以每一层之后都采用了BN。
+​	对于关键点的网络结构是Vanilla CNN的一种变型，如下图所示，四层卷积网络，还有两层全连接层，这两层连接层用到的tanh作为非线性的激活函数，另外再最后的三层卷积层输出都经过max-pooling。相对于别的使用40x40作为输入的网络，通过额外的卷积层和max-pooling能够让网络适应更大的input  image。另外对于tanh作为activation function，很容易趋向饱和，也就是可能导致梯度变化太小甚至近乎于0，所以每一层之后都采用了BN。
 
 ![1523450475169](./assets/1523450475169.png)
 
