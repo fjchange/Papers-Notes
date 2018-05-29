@@ -2,7 +2,7 @@ CVPR 2016： DeepFashion: Pwoering Robust Clothes Recognition and Retrieval with
 
 Abstract：
 
-1. 提出一个大规模的数据集，超过80000张图片，被大量标记的。服装类型的模型评测数据集。而且图片拍摄于于多个场景（店拍、街拍、消费者自拍）/多种姿势
+1. 提出一个大规模的数据集，超过800000张图片，被大量标记的。服装类型的模型评测数据集。而且图片拍摄于于多个场景（店拍、街拍、消费者自拍）/多种姿势
 2. 提出一个FashionNet的模型，通过预测服装特性和标志来学习衣服的特征。
 
 1. Background
