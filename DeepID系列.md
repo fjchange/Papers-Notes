@@ -1,5 +1,5 @@
 ---
-typora-root-url: H:\Users\kiwi feng\Desktop\论文笔记\assets
+typora-root-url: assets
 ---
 
 # DeepID四代论文笔记
