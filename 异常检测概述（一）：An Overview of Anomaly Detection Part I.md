@@ -35,7 +35,7 @@ Unsupervised 和 Clean都难以解决下面这样的异常点：
 ## 1.5 ML做异常检测的方法
 主要是采用聚类这样的Unsupervised的方法来做异常检测。主要是通过训练集映射到一个距离度量空间，寻找一个合适的阈值来区分开正常和异常。
 
-目前比较好的方法是周志华老师的Deep Forest，通过对数据集进行不同维度上的切割，直到所有数据都划分开，或者数据划分到某一个程度。那么异常点总是能够轻易的被划分开来的，因为他们离群。
+目前比较好的方法是周志华老师的Isolation Forest，通过对数据集进行不同维度上的切割，直到所有数据都划分开，或者数据划分到某一个程度。那么异常点总是能够轻易的被划分开来的，因为他们离群。
 # 2 Video Anomaly Detection
 以下内容主要来自【1】
 ## 2.1 视频异常检测和ML中的区别
@@ -82,7 +82,11 @@ Traffic 数据集【4】
 
 # 0.引用
 【1】 An overview of deep learning based methods for unsupervised and semi-supervised anomaly detection in videos . Journal of Imaging . B.Ravi Kiran ..
+
 【2】 Future Frame Prediction for Anomaly Detection - A New Baseline CVPR 2018
+
 【3】Anomaly Detection: Algorithms, Explanations, Applications. The talk in Microsoft research, 13/3/2018, Thomas Dietterich,[youtube link](https://www.youtube.com/watch?v=12Xq9OLdQwQ)
+
 【4】Spatio-Temporal AutoEncoder for Video Anomaly Detection ACM MM [link](https://www.semanticscholar.org/paper/Spatio-Temporal-AutoEncoder-for-Video-Anomaly-Zhao-Deng/fef6f1e04fa64f2f26ac9f01cd143dd19e549790)
+
 【5】Real-World Anomaly Detection in Surveillance Videos . CVPR 2018
